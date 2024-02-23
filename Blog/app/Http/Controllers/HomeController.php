@@ -19,7 +19,7 @@ class HomeController extends BaseController
         $title = '';
         if (request('kategori')) {
             $kategori = Category::firstWhere('title', request('kategori'));
-            $title = $kategori->nama;
+            $title = $kategori->title;
         }
         if (request('authors')) {
             $user = user::firstWhere('name', request('authors'));

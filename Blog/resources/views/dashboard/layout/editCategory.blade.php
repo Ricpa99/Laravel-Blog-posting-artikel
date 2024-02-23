@@ -10,7 +10,7 @@
             @endif
       <h1 class="h2">Edit Catgeory</h1>
       <div class="col-lg-8">
-         <form action="/dashboard/categories/{{ $category->title }}" method="post" enctype="multipart/form-data">
+         <form action="/dashboard/categories/{{ $category->slug }}" method="post" enctype="multipart/form-data">
             @method('put')
             @csrf
             <div class="mb-3">
