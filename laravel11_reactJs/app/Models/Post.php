@@ -28,9 +28,8 @@ class Post extends Model
                    })
                    ->orWhereHas('category', function($query) use ($seacrh){
                     $query->where('name', 'like', "%{$seacrh}%");
-                   })
-                   ;   
-         }
+                   });   
+        }
          return $query;
     }
 }

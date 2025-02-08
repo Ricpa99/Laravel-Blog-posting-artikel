@@ -4,6 +4,7 @@ import Login from "./Auth/Login";
 
 
 export default function Blogs({title, posts, pos}){
+   console.log(posts);
    const page = usePage().props.posts
    const {post, setData, data, errors, get} = useForm()
    const submit = (e) => {
@@ -64,7 +65,7 @@ export default function Blogs({title, posts, pos}){
                                  
                                  `} href={`/category/${post.category.slug}`}>{post.category.name}</Link>
                               </div>
-                                 <p className="text-slate-700 mt-3">{post.body}</p>
+                                 <p className="text-slate-700 mt-6">{post.body}</p>
                               </div>
                               <Link className="text-xs mt-5 bottom-2 text-blue-400 absolute" href={`/blog/${post.slug}`}>Read more &raquo; </Link>
                         </div>

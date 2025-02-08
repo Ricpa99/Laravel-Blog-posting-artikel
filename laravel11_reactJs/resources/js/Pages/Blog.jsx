@@ -30,7 +30,7 @@ export default function Blogs({title, post}){
                               </div>
                            </div>
                            </div>
-                           <p className="text-slate-700 mt-3 sm:text-2xl text-lg text-justify mb-5">{pos.body} </p>
+                           <p className="text-slate-700 mt-3 sm:text-2xl text-lg text-justify mt-6">{pos.body} </p>
                            </div>
                            <Link className="bottom-2 left-6 text-blue-400 absolute" href={`/blogs`}>&laquo; Back </Link>
                    </div>

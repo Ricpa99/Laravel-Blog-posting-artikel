@@ -15,7 +15,6 @@ Route::get('/blog/{post:slug}', [IndexController::class, 'blog']);
 Route::get('/author/{user:username}', [IndexController::class, 'user']);
 Route::get('/category/{category:slug}', [IndexController::class, 'category']);
 Route::post('/logout', function(){
-    return dd('ok');
     return Inertia::render('Welcome');
 })->name('blogs.keluar');
 
